@@ -23,3 +23,4 @@ elif [[ "$VERSION" == "raspbian_lite_latest" ]]; then
 GET_FILE
 elif [[ "$VERSION" == "raspbian_full_latest" ]]; then
 GET_FILE
+fi
