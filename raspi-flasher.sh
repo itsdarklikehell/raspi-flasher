@@ -33,3 +33,4 @@ elif [[ "$VERSION" == "raspbian_full_latest" ]]; then
 FLASH_FILE
 elif [[ "$VERSION" == "raspbian_latest" ]]; then
 FLASH_FILE
+fi

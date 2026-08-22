@@ -10,7 +10,7 @@ VERSION=$(whiptail --title "Select version for download" --radiolist \
 GET_FILE(){
 WORKDIR=$PWD
 BASEURL="https://downloads.raspberrypi.org"
-wget -c $BASEURL/$VERSION -O $WORKDIR/VERSION.zip
+wget -c $BASEURL/$VERSION -O $WORKDIR/$VERSION.zip
 echo "Downloaded: $VERSION"
 echo "From: $BASEURL"
 echo "To: $WORKDIR/$VERSION.zip"
@@ -23,3 +23,6 @@ elif [[ "$VERSION" == "raspbian_lite_latest" ]]; then
 GET_FILE
 elif [[ "$VERSION" == "raspbian_full_latest" ]]; then
 GET_FILE
+elif [[ "$VERSION" == "raspbian_latest" ]]; then
+GET_FILE
+fi
