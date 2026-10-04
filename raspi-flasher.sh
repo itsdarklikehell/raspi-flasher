@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 whiptail --title "Disclaimer!" --msgbox "This script can flash various raspberry pi images. You must hit OK to continue." 8 78
 
 VERSION=$(whiptail --title "Select version for download" --radiolist \
